@@ -54,6 +54,7 @@
             <a href="#founder's story">Our Story</a>
             <a href="#programs">Programs</a>
 			<a href="books.html" target="_blank"> Books </a>
+			<a href="schools.html" target="_blank"> Samskaara at Schools </a>
             <a href="#gallery">Our Team</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#blogs">Blogs</a>
@@ -64,10 +65,24 @@
 
 </header>
 
+
 <!-- ANNOUNCEMENT -->
+
 <section class="announcement-bar">
 
     <div class="announcement-track">
+
+        <!-- SET 1 -->
+
+        <div class="announcement-content">
+            🌿 Where Spirituality Meets Modern Parenting. ✦ Because Every Child Deserves Roots Before Wings. ✦ The Greatest Gift to a Child is Inner Wisdom. ✦ Culture is Not Taught in a Day — It is Lived Every Day
+        </div>
+
+        <div class="announcement-content">
+            🌿 Batch announcements - Enrollments open for ✦ Ankuram - Japan, USA ✦ Hanuman Chalisa - India ✦ Gita Vidya - India ✦ Garbha Samskaara - July batch open.
+        </div>
+
+        <!-- DUPLICATE FOR SMOOTH LOOP -->
 
         <div class="announcement-content">
             🌿 Where Spirituality Meets Modern Parenting. ✦ Because Every Child Deserves Roots Before Wings. ✦ The Greatest Gift to a Child is Inner Wisdom. ✦ Culture is Not Taught in a Day — It is Lived Every Day
@@ -80,6 +95,8 @@
     </div>
 
 </section>
+
+
 
 <!-- HERO -->
 <section class="premium-hero" id="home">
@@ -595,12 +612,12 @@
 
                     <span class="quick-btn"
                           onclick="event.preventDefault(); event.stopPropagation(); openModal('Dharmaratna','A transformational leadership program that nurtures confidence, communication, responsibility, emotional intelligence, teamwork, and dharmic decision-making in growing children.')">
-                        Quick View
+                        Know more
                     </span>
 
 					<span class="quick-btn"
 						  onclick="event.preventDefault(); event.stopPropagation(); window.open('https://forms.gle/VW9nfLMutMTzNAFb9', '_blank')">
-						Know more
+						Register Here
 					</span>
 
                 </div>
@@ -1067,7 +1084,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Veena Amma
 
 						</span>
 
@@ -1095,14 +1112,14 @@
 						<h3>Manasa S</h3>
 
 						<p>
-							🌸 Meet the Samskaara Architect.
+							🌸 Meet the Samskaara Mentor.
 						</p>
 
 						<!-- KNOW MORE BUTTON -->
 
 						<span class="teacher-btn"
 							  onclick="event.stopPropagation(); openTeacherModal(
-							  'Anusha Kunagu',
+							  'Manasa S',
 							  '🌸 Meet the Samskaara Mentor',
 							  'images/teacher10.jpeg',
 							  `
@@ -1154,7 +1171,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Manasa S
 
 						</span>
 
@@ -1257,7 +1274,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Ashwiini Prasshanth
 
 						</span>
 
@@ -1342,7 +1359,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Akshatha A
 
 						</span>
 
@@ -1423,7 +1440,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Anusha Kunagu
 
 						</span>
 
@@ -1501,7 +1518,7 @@
 							  `
 							  )">
 
-							Know More
+							More about Amitha Gunashekar
 
 						</span>
 
@@ -1650,11 +1667,25 @@
 
     </div>
 
-    <!-- TESTIMONIAL CARDS -->
 
-    <div class="testimonial-grid">
 
-        <div class="testimonial-card">
+<!-- TESTIMONIAL SLIDER -->
+
+<div class="slider-container">
+
+    <!-- LEFT BUTTON -->
+
+    <button class="slider-btn"
+            onclick="scrollTestimonials(-340)">
+        ❮
+    </button>
+
+    <!-- TESTIMONIALS -->
+
+    <div class="testimonial-grid"
+         id="testimonialGallery">
+		 
+		 <div class="testimonial-card">
 
             <div class="testimonial-avatar">
                 💛
@@ -1719,7 +1750,7 @@
 
         </div>
 		
- <!--       <div class="testimonial-card">
+      <div class="testimonial-card">
 
             <div class="testimonial-avatar">
                 💛
@@ -1737,9 +1768,18 @@
 				Learnt new things along with my daughter. Quiz is really good. She learnt how to prepare Panchamirtham. Thank you for making them learn. 🙏🙏
             </p>
 
-        </div>-->
+        </div>
 
     </div>
+
+    <!-- RIGHT BUTTON -->
+
+    <button class="slider-btn"
+            onclick="scrollTestimonials(340)">
+        ❯
+    </button>
+
+</div>
 
 </section>
 
@@ -2125,6 +2165,24 @@ function closeTeacherModal() {
 }
 
 </script>
+
+
+<script>
+
+function scrollTestimonials(value){
+
+    document.getElementById(
+        "testimonialGallery"
+    ).scrollBy({
+
+        left:value,
+
+        behavior:'smooth'
+    });
+}
+
+</script>
+
 
 
 </body>
