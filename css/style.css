@@ -503,17 +503,52 @@ nav a:hover{
 
 .section-heading{
     text-align:center;
-    margin-bottom:55px;
+    margin-bottom:45px;
+    position:relative;
 }
 
+/* TITLE */
 .section-heading h2{
-    font-size:42px;
-    margin-bottom:14px;
-    font-family:'Playfair Display',serif;
+    font-size:40px;
+    font-weight:800;
+    letter-spacing:0.5px;
+
+    display:inline-block;
+
+    color:#2f2f2f; /* your actual site tone (not purple-heavy) */
+
+    position:relative;
+    padding:0 18px;
 }
 
+/* SIMPLE ACCENT LINE (matches your orange CTA system) */
+.section-heading h2::after{
+    content:"";
+    display:block;
+    width:85px;
+    height:3px;
+    margin:12px auto 0;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #ff9800,
+        #ffb300,
+        #ff6f00
+    );
+
+    box-shadow:0 2px 8px rgba(255,152,0,0.25);
+}
+
+/* SUBTEXT */
 .section-heading p{
-    color:#666;
+    font-size:17px;
+    max-width:820px;
+    margin:16px auto 0;
+    line-height:1.7;
+
+    color:#5a5a5a;
 }
 
 /* GRID */
@@ -2985,3 +3020,156 @@ nav a:hover{
     }
 }
 
+
+/* Register buttons */
+
+.register-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.register-btn{
+
+    position:relative;
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:430px;
+    max-width:90%;
+
+    padding:20px 28px;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:24px;
+    font-weight:800;
+
+    letter-spacing:0.5px;
+
+    text-align:center;
+
+	background:linear-gradient(
+		135deg,
+		#6a85b6,
+		#88bdbc,
+		#c3aed6
+	);
+
+	background-size:300% 300%;
+
+    animation:
+        gradientMove 5s ease infinite,
+        pulseGlow 1.8s infinite;
+
+    transition:all 0.35s ease;
+
+    box-shadow:
+		0 0 12px rgba(106,133,182,0.35),
+		0 0 22px rgba(195,174,214,0.25);
+
+}
+
+/* SHIMMER EFFECT */
+
+.register-btn::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:80%;
+    height:100%;
+
+    background:rgba(255,255,255,0.28);
+
+    transform:skewX(-25deg);
+
+    animation:shimmer 2.5s infinite;
+
+}
+
+/* HOVER */
+
+.register-btn:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+	box-shadow:
+		0 0 18px rgba(106,133,182,0.45),
+		0 0 30px rgba(195,174,214,0.4);
+
+}
+
+/* CLICK */
+
+.register-btn:active{
+
+    transform:scale(0.96);
+
+}
+
+/* ANIMATIONS */
+
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
+
+}
+
+@keyframes pulseGlow{
+
+	0%{
+		box-shadow:
+			0 0 10px rgba(106,133,182,0.25),
+			0 0 18px rgba(195,174,214,0.2);
+	}
+
+	50%{
+		box-shadow:
+			0 0 20px rgba(106,133,182,0.45),
+			0 0 35px rgba(195,174,214,0.35);
+	}
+
+	100%{
+		box-shadow:
+			0 0 10px rgba(106,133,182,0.25),
+			0 0 18px rgba(195,174,214,0.2);
+	}
+
+}
+
+@keyframes shimmer{
+
+    0%{
+        left:-120%;
+    }
+
+    100%{
+        left:130%;
+    }
+
+}
