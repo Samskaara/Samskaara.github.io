@@ -1544,62 +1544,50 @@ nav a:hover{
 
 /* SCROLLABLE TESTIMONIALS */
 
-.testimonial-grid{
+.testimonial-grid {
+    max-width: 1200px;
+    margin: auto;
 
-    max-width:1200px;
+    display: flex;
+    gap: 24px;
 
-    margin:auto;
-
-    display:flex;
-
-    gap:24px;
-
-    overflow-x:auto;
-
-    scroll-behavior:smooth;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 
     padding: 10px 16px;
 
-    scrollbar-width:none;
-	
-	scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
-/* HIDE SCROLLBAR */
-
-.testimonial-grid::-webkit-scrollbar{
-
-    display:none;
+.testimonial-grid::-webkit-scrollbar {
+    display: none;
 }
 
 /* CARD WIDTH */
 
-.testimonial-card{
+.testimonial-card {
 
-    flex:0 0 auto;
+    flex: 0 0 auto;
 
-    width:320px;
-	 max-width: 85vw;
-	scroll-snap-align: center;
-}
-
-
-
-/* CARD */
-
-.testimonial-card{
-    flex: 0 0 85%;
-    max-width: 320px;
+    width: 320px;
+    max-width: 85vw;
 
     scroll-snap-align: center;
 
     background: #fffaf4;
+
     border-radius: 26px;
+
     padding: 28px 22px;
 
     text-align: center;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+    transition: 0.3s ease;
 }
 
 .testimonial-card:hover {
@@ -1659,14 +1647,14 @@ nav a:hover{
 @media (max-width: 768px) {
 
     .testimonial-grid {
+        padding: 10px 10px;
         gap: 16px;
-        padding: 10px 16px;
-		scroll-snap-type: x mandatory;
     }
 
-    .testimonial-card{
-        flex: 0 0 85%;
-        max-width: 300px;
+    .testimonial-card {
+        width: 85vw;   /* makes it fit screen */
+        max-width: 85vw;
+        padding: 24px 18px;
     }
 
     .testimonial-hero {
