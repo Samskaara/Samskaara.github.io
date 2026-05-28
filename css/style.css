@@ -3457,9 +3457,46 @@ nav a:hover{
     overflow: hidden;
 }
 
+.quick-btn-b {
+    margin-top: auto;
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
+
     .premium-book-card {
         width: 85vw;
+        min-width: 85vw;
+
+        display: flex;
+        flex-direction: column;
+		flex: 0 0 100%;
+
+        height: auto;
+    }
+	
+    .book-content h3 {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .book-content p {
+        font-size: 13px;
+        line-height: 1.4;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .book-image {
+        height: 160px;
+        object-fit: cover;
+    }
+    #booksSlider {
+        padding: 10px 0;
     }
 }
