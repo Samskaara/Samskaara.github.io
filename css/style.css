@@ -3026,12 +3026,11 @@ nav a:hover{
 
 
 
-.books-hero{
+.books-hero {
 
     background: url('../images/bookshero.jpeg');
     background-size: cover;
 
-    /* shift image slightly up so bottom is visible */
     background-position: center 30%;
 
     background-repeat: no-repeat;
@@ -3042,23 +3041,24 @@ nav a:hover{
     align-items: center;
 }
 
-.books-hero .hero-wrapper{
+.books-hero .hero-wrapper {
 
     width: 100%;
+
     display: flex;
 
-    justify-content: flex-end; /* move content right */
+    justify-content: flex-end;
 
     padding: 0 8%;
 }
 
-.books-hero .hero-text{
+.books-hero .hero-text {
 
     max-width: 420px;
 
     text-align: left;
 
-    margin-top: 260px; /* adjust vertically */
+    margin-top: 0;   /* ❌ remove 260px */
 
 }
 
@@ -3385,4 +3385,45 @@ nav a:hover{
 .premium-icon i{
     color: #d4af37;
     font-size: 32px;
+}
+
+@media (max-width: 768px) {
+
+    .books-hero {
+
+        min-height: 80vh; /* better than full screen on mobile */
+
+        background-position: center top; /* shows important top content */
+
+    }
+
+    .books-hero .hero-wrapper {
+
+        justify-content: center; /* center content on mobile */
+
+        padding: 0 20px;
+
+    }
+
+    .books-hero .hero-text {
+
+        max-width: 100%;
+
+        text-align: center;
+
+    }
+}
+
+#booksSlider {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+#booksSlider > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
 }
