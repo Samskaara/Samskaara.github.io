@@ -639,19 +639,16 @@
 <script>
 
 function scrollBooks(direction) {
-
     const slider = document.getElementById("booksSlider");
 
-    const card = slider.querySelector(".book-card");
+    const card = slider.querySelector(".premium-book-card");
+    if (!card) return;
 
-    const style = window.getComputedStyle(slider);
-
-    const gap = parseInt(style.gap || 0);
-
-    const scrollAmount = card.offsetWidth + gap;
+    const cardWidth = card.offsetWidth;
+    const gap = 16;
 
     slider.scrollBy({
-        left: direction * scrollAmount,
+        left: direction * (cardWidth + gap),
         behavior: "smooth"
     });
 }
