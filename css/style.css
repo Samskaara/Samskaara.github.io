@@ -1542,6 +1542,8 @@ nav a:hover{
     padding:10px;
 
     scrollbar-width:none;
+	
+	 scroll-snap-type: x mandatory;
 }
 
 /* HIDE SCROLLBAR */
@@ -1564,21 +1566,19 @@ nav a:hover{
 
 /* CARD */
 
-.testimonial-card {
+.testimonial-card{
+    flex: 0 0 85%;
+    max-width: 320px;
+
+    scroll-snap-align: center;
+
     background: #fffaf4;
-
     border-radius: 26px;
-
-    padding: 38px 32px;
+    padding: 28px 22px;
 
     text-align: center;
 
-    box-shadow:
-        0 10px 30px rgba(0,0,0,0.06);
-
-    transition: 0.35s ease;
-
-    border: 1px solid rgba(0,0,0,0.04);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
 }
 
 .testimonial-card:hover {
@@ -1643,19 +1643,17 @@ nav a:hover{
 		scroll-snap-type: x mandatory;
     }
 
-    .testimonial-card {
-        width: 85vw;   /* key fix */
-        max-width: 320px;
-        flex: 0 0 auto;
-		scroll-snap-align: center;
+    .testimonial-card{
+        flex: 0 0 85%;
+        max-width: 300px;
     }
 
     .testimonial-hero {
-        padding: 45px 20px;
+        padding: 40px 20px;
     }
 
     .testimonial-hero h3 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .testimonial-hero p {
@@ -2862,7 +2860,7 @@ nav a:hover{
 ========================= */
 
 .schools-hero{
-    background: url('../images/schoolhero.png');
+    background: url('../images/schoolhero.jpeg');
     background-size: cover;
     background-position: top center;
 }
@@ -3009,7 +3007,7 @@ nav a:hover{
 
 .books-hero{
 
-    background: url('../images/bookshero.png');
+    background: url('../images/bookshero.jpeg');
     background-size: cover;
 
     /* shift image slightly up so bottom is visible */
