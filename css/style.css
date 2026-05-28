@@ -1539,11 +1539,11 @@ nav a:hover{
 
     scroll-behavior:smooth;
 
-    padding:10px;
+    padding: 10px 16px;
 
     scrollbar-width:none;
 	
-	 scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
 }
 
 /* HIDE SCROLLBAR */
@@ -1560,6 +1560,8 @@ nav a:hover{
     flex:0 0 auto;
 
     width:320px;
+	 max-width: 85vw;
+	scroll-snap-align: center;
 }
 
 
