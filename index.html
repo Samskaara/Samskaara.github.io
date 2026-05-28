@@ -2010,7 +2010,7 @@
     <!-- LEFT BUTTON -->
 
     <button class="slider-btn"
-            onclick="scrollTestimonials(-340)">
+            onclick="scrollTestimonials(-1)">
         ❮
     </button>
 
@@ -2109,7 +2109,7 @@
     <!-- RIGHT BUTTON -->
 
     <button class="slider-btn"
-            onclick="scrollTestimonials(340)">
+            onclick="scrollTestimonials(1)">
         ❯
     </button>
 
@@ -2503,6 +2503,7 @@ function closeTeacherModal() {
 
 <script>
 
+/*
 function scrollTestimonials(value){
 
     document.getElementById(
@@ -2512,6 +2513,20 @@ function scrollTestimonials(value){
         left:value,
 
         behavior:'smooth'
+    });
+}*/
+
+function scrollTestimonials(direction){
+
+    const container = document.getElementById("testimonialGallery");
+
+    const card = container.querySelector(".testimonial-card");
+
+    const cardWidth = card.offsetWidth + 24; // include gap
+
+    container.scrollBy({
+        left: direction * cardWidth,
+        behavior: "smooth"
     });
 }
 
