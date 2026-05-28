@@ -1889,7 +1889,7 @@
         <div class="slider-container">
 
             <button class="slider-btn"
-                    onclick="scrollGallery(-320)">
+                    onclick="scrollGallery(-1)">
                 ❮
             </button>
 
@@ -1944,7 +1944,7 @@
             </div>
 
             <button class="slider-btn"
-                    onclick="scrollGallery(320)">
+                    onclick="scrollGallery(1)">
                 ❯
             </button>
 
@@ -2358,13 +2358,20 @@ function closeModal() {
 
 <script>
 
-function scrollGallery(amount) {
+function scrollGallery(direction) {
 
-    const gallery =
-        document.getElementById('kidsGallery');
+    const gallery = document.getElementById('kidsGallery');
+
+    const card = gallery.querySelector('.gallery-card');
+
+    const cardWidth = card.offsetWidth;
+
+    const gap = 24; // match your CSS gap if any
+
+    const scrollAmount = cardWidth + gap;
 
     gallery.scrollBy({
-        left: amount,
+        left: direction * scrollAmount,
         behavior: 'smooth'
     });
 }
