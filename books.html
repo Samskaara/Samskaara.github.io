@@ -213,7 +213,7 @@
     <!-- LEFT -->
 
     <button class="slider-btn"
-            onclick="scrollBooks(-380)">
+            onclick="scrollBooks(-1)">
         ❮
     </button>
 
@@ -435,7 +435,7 @@
 		    <!-- RIGHT -->
 
     <button class="slider-btn"
-            onclick="scrollBooks(380)">
+            onclick="scrollBooks(1)">
         ❯
     </button>
 
@@ -638,15 +638,23 @@
 
 <script>
 
-function scrollBooks(value){
+function scrollBooks(direction) {
 
-    document.getElementById(
-        "booksSlider"
-    ).scrollBy({
+    const slider = document.getElementById("booksSlider");
 
-        left:value,
+    const card = slider.querySelector(".book-card, .gallery-card, div");
 
-        behavior:'smooth'
+    const style = window.getComputedStyle(slider);
+
+    const gap = parseInt(style.gap || 0);
+
+    const cardWidth = card ? card.offsetWidth : 300;
+
+    const scrollAmount = cardWidth + gap;
+
+    slider.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
     });
 }
 
