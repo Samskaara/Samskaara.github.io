@@ -2862,7 +2862,7 @@ nav a:hover{
 ========================= */
 
 .schools-hero{
-    background: url('../images/schoolhero.JPEG');
+    background: url('../images/schoolhero.jpeg');
     background-size: cover;
     background-position: top center;
 }
@@ -3009,7 +3009,7 @@ nav a:hover{
 
 .books-hero{
 
-    background: url('../images/bookshero.JPEG');
+    background: url('../images/bookshero.jpeg');
     background-size: cover;
 
     /* shift image slightly up so bottom is visible */
