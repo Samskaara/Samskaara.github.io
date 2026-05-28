@@ -1108,7 +1108,7 @@
         <div class="slider-container">
 
             <button class="slider-btn"
-                    onclick="scrollTeamGallery(-320)">
+                    onclick="scrollTeamGallery(-1)">
                 ❮
             </button>
 
@@ -1863,7 +1863,7 @@
             </div>
 
             <button class="slider-btn"
-                    onclick="scrollTeamGallery(320)">
+                    onclick="scrollTeamGallery(1)">
                 ❯
             </button>
 
@@ -2369,13 +2369,16 @@ function scrollGallery(amount) {
     });
 }
 
-function scrollTeamGallery(amount) {
+function scrollTeamGallery(direction){
 
-    const gallery =
-        document.getElementById('teamGallery');
+    const gallery = document.getElementById('teamGallery');
+
+    const card = gallery.querySelector('.gallery-card');
+
+    const cardWidth = card.offsetWidth + 20;
 
     gallery.scrollBy({
-        left: amount,
+        left: direction * cardWidth,
         behavior: 'smooth'
     });
 }
