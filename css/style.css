@@ -728,17 +728,32 @@ nav a:hover{
 /* GALLERY */
 
 .gallery-grid{
-    max-width:1200px;
-    margin:auto;
+    max-width: 1200px;
+    margin: auto;
 
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 10px 16px;
+
+    scrollbar-width: none;
+
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-grid::-webkit-scrollbar{
+    display: none;
 }
 
 .gallery-grid img{
-    width:100%;
-    border-radius:18px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+
+    border-radius: 18px;
 }
 
 /* CTA */
