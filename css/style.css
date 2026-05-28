@@ -1116,10 +1116,12 @@ nav a:hover{
 
 .gallery-card {
     flex: 0 0 auto;
-    width: 260px;
+    width: 280px;
     background: #fffaf4;
     border-radius: 20px;
     overflow: hidden;
+	max-width: 85vw;
+	scroll-snap-align: start;
 
     box-shadow:
         0 10px 25px rgba(0,0,0,0.08);
