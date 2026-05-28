@@ -580,6 +580,7 @@ nav a:hover{
     transform:translateY(-8px);
 }
 
+/*
 .premium-icon{
     width:90px;
     height:90px;
@@ -596,10 +597,107 @@ nav a:hover{
 
     font-size:40px;
     color:white;
+}*/
+
+/* BASE ICON */
+.premium-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 20px;
+    font-size:28px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:all 0.3s ease;
+}
+
+/* ================= SAMSKAARA ================= */
+
+/* Sacred Sprouts */
+.program-link.sprout .premium-icon{
+    background: linear-gradient(135deg,#d4f5dc,#b8e7c5);
+    color:#2f7a4d;
+}
+
+/* Explorers */
+.program-link.explorer .premium-icon{
+    background: linear-gradient(135deg,#d9ecff,#b9dbff);
+    color:#2f5f9f;
+}
+
+/* Leaders Lab */
+.program-link.leader .premium-icon{
+    background: linear-gradient(135deg,#ffe7c2,#ffd29b);
+    color:#b36a00;
+}
+
+/* CEO */
+.program-link.ceo .premium-icon{
+    background: linear-gradient(135deg,#efe1ff,#d9c2ff);
+    color:#6d42a8;
+}
+
+/* ================= GARBHA ================= */
+
+/* Dhyanam */
+.program-link.dhyanam .premium-icon{
+    background: linear-gradient(135deg,#e4f7f2,#c8ede3);
+    color:#2c7a6b;
+}
+
+/* Matrutvam */
+.program-link.matrutvam .premium-icon{
+    background: linear-gradient(135deg,#ffdce8,#ffc2d6);
+    color:#b54874;
+}
+
+/* Paripoornam */
+.program-link.paripoornam .premium-icon{
+    background: linear-gradient(135deg,#f1efd7,#e4dfb5);
+    color:#8a7a1f;
+}
+
+/* hover */
+.premium-card:hover .premium-icon{
+    transform:translateY(-5px) scale(1.06);
 }
 
 .premium-card h3{
     margin-bottom:12px;
+}
+
+
+/* ================= BENEFITS COLORS ================= */
+
+/* Respectful & Grounded */
+.benefit.grounded .premium-icon{
+    background: linear-gradient(135deg,#d4f5dc,#b8e7c5);
+    color:#2f7a4d;
+}
+
+/* Confident Expression */
+.benefit.expression .premium-icon{
+    background: linear-gradient(135deg,#d9ecff,#b9dbff);
+    color:#2f5f9f;
+}
+
+/* Academic Readiness */
+.benefit.learning .premium-icon{
+    background: linear-gradient(135deg,#ffe7c2,#ffd29b);
+    color:#b36a00;
+}
+
+/* Holistic Growth */
+.benefit.holistic .premium-icon{
+    background: linear-gradient(135deg,#efe1ff,#d9c2ff);
+    color:#6d42a8;
+}
+
+/* hover effect */
+.premium-card:hover .premium-icon{
+    transform:translateY(-5px) scale(1.06);
 }
 
 /* STATS */
@@ -1022,9 +1120,13 @@ nav a:hover{
 
 .gallery-card img {
     width: 100%;
-    height: 260px;
+    height: 280px;          /* adjust if needed */
     object-fit: cover;
-    display: block;
+
+    /* shift focus slightly downward so top is visible */
+    object-position: center top;
+
+    border-radius: 12px;
 }
 
 .gallery-card-content {
@@ -1535,26 +1637,32 @@ nav a:hover{
 
 @media (max-width: 768px) {
 
-    .testimonial-hero {
-        padding: 45px 28px;
-    }
-
-    .testimonial-hero h3 {
-        font-size: 30px;
-    }
-
-    .testimonial-hero p {
-        font-size: 15px;
-    }
-
     .testimonial-grid {
-        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 10px 16px;
+		scroll-snap-type: x mandatory;
     }
 
     .testimonial-card {
-        padding: 30px 24px;
+        width: 85vw;   /* key fix */
+        max-width: 320px;
+        flex: 0 0 auto;
+		scroll-snap-align: center;
+    }
+
+    .testimonial-hero {
+        padding: 45px 20px;
+    }
+
+    .testimonial-hero h3 {
+        font-size: 28px;
+    }
+
+    .testimonial-hero p {
+        font-size: 14px;
     }
 }
+
 /* HERO IMAGE */
 .hero-image{
     display:flex;
@@ -1722,11 +1830,58 @@ nav a:hover{
     transform:translateY(-6px);
 }
 
-.concern-icon{
+/*.concern-icon{
 
     font-size:38px;
 
     margin-bottom:16px;
+}*/
+
+.concern-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    font-size:28px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+    transition:all 0.3s ease;
+}
+
+.concern-card:nth-child(1) .concern-icon{
+    background:linear-gradient(135deg,#d4f5dc,#b8e7c5);
+    color:#2f7a4d;
+}
+
+.concern-card:nth-child(2) .concern-icon{
+    background:linear-gradient(135deg,#efe1ff,#d9c2ff);
+    color:#6d42a8;
+}
+
+.concern-card:nth-child(3) .concern-icon{
+    background:linear-gradient(135deg,#fff1c9,#ffe29a);
+    color:#b8860b;
+}
+
+.concern-card:nth-child(4) .concern-icon{
+    background:linear-gradient(135deg,#d9ecff,#b9dbff);
+    color:#2f5f9f;
+}
+
+.concern-card:nth-child(5) .concern-icon{
+    background:linear-gradient(135deg,#ffdce8,#ffc2d6);
+    color:#b54874;
+}
+
+.concern-card:hover .concern-icon{
+    transform:translateY(-5px) scale(1.05);
 }
 
 .concern-card p{
@@ -2707,13 +2862,9 @@ nav a:hover{
 ========================= */
 
 .schools-hero{
-
-    background:
-        url('../images/samskaarahero1.png');
-
-    background-size:cover;
-
-    background-position:center;
+    background: url('../images/schoolhero.JPEG');
+    background-size: cover;
+    background-position: top center;
 }
 
 /* SCHOOLS CTA */
@@ -2853,6 +3004,44 @@ nav a:hover{
 /* =========================
    PREMIUM BOOK CARD FIX
 ========================= */
+
+
+
+.books-hero{
+
+    background: url('../images/bookshero.JPEG');
+    background-size: cover;
+
+    /* shift image slightly up so bottom is visible */
+    background-position: center 30%;
+
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.books-hero .hero-wrapper{
+
+    width: 100%;
+    display: flex;
+
+    justify-content: flex-end; /* move content right */
+
+    padding: 0 8%;
+}
+
+.books-hero .hero-text{
+
+    max-width: 420px;
+
+    text-align: left;
+
+    margin-top: 260px; /* adjust vertically */
+
+}
 
 /* BOOK GRID */
 
@@ -3172,4 +3361,9 @@ nav a:hover{
         left:130%;
     }
 
+}
+
+.premium-icon i{
+    color: #d4af37;
+    font-size: 32px;
 }
