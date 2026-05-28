@@ -2375,14 +2375,17 @@ function scrollTeamGallery(direction){
 
     const card = gallery.querySelector('.gallery-card');
 
-    const cardWidth = card.offsetWidth + 20;
+    const style = window.getComputedStyle(gallery);
+
+    const gap = parseInt(style.gap || 0);
+
+    const cardWidth = card.offsetWidth + gap;
 
     gallery.scrollBy({
         left: direction * cardWidth,
         behavior: 'smooth'
     });
 }
-
 </script>
 
 
