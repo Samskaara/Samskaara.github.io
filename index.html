@@ -1897,47 +1897,52 @@
                  id="kidsGallery">
 
                 <div class="gallery-card">
-                    <img src="images/kids1.jpeg" alt="Kids">
+                    <img src="images/k1.jpeg" alt="Kids">
 
                     <div class="gallery-card-content">
-                        <h3>Mindful Activities</h3>
-                        <p>Learning through awareness.</p>
+                        <h3>Satyaved</h3>
+						<p>L3 leaders lab, Australia</p>
+						<p>He is helping his mother in vaccuming.</p>
                     </div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="images/kids2.jpeg" alt="Kids">
+                    <img src="images/k2.jpeg" alt="Kids">
 
                     <div class="gallery-card-content">
-                        <h3>Group Learning</h3>
-                        <p>Collaborative growth experiences.</p>
+                        <h3>Sri Andal </h3>
+						<p>L3 leaders lab, Australia</p>
+						<p>Sri Andal helped her mother in laundry.</p>
                     </div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="images/kids3.jpeg" alt="Kids">
+                    <img src="images/k3.jpeg" alt="Kids">
 
                     <div class="gallery-card-content">
-                        <h3>Creative Play</h3>
-                        <p>Exploring imagination.</p>
+                        <h3>Ahaana </h3>
+						<p>L3 leaders lab, Australia</p>
+						<p>Ahaana helped her mother in taking the list of groceries.</p>
                     </div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="images/kids4.jpeg" alt="Kids">
+                    <img src="images/k4.jpeg" alt="Kids">
 
                     <div class="gallery-card-content">
-                        <h3>Value Sessions</h3>
-                        <p>Learning life principles.</p>
+                        <h3>Havisha </h3>
+						<p>L1 Sacred sprouts, India</p>
+						<p>Celebrating Gita Jayanthi.</p>
                     </div>
                 </div>
 
                 <div class="gallery-card">
-                    <img src="images/kids5.jpg" alt="Kids">
+                    <img src="images/k5.jpeg" alt="Kids">
 
                     <div class="gallery-card-content">
-                        <h3>Outdoor Learning</h3>
-                        <p>Experiential education.</p>
+                        <h3>Adeehsh </h3>
+						<p>L1 Sacred sprouts, India</p>
+						<p>Watering the plants.</p>
                     </div>
                 </div>
 
@@ -2419,18 +2424,18 @@ function closeFounderModal() {
 
 function toggleFullStory() {
 
-    const story =
-        document.getElementById(
-            "fullStoryContent"
-        );
+    const story = document.getElementById("fullStoryContent");
+    const btn = document.querySelector(".expand-story-btn");
 
-    if(story.style.display === "block"){
+    if (story.style.display === "block") {
 
         story.style.display = "none";
+        btn.style.display = "inline-block";
 
     } else {
 
         story.style.display = "block";
+        btn.style.display = "none";
     }
 }
 
