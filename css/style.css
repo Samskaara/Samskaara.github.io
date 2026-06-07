@@ -3472,7 +3472,7 @@ nav a:hover{
 
         display: flex;
         flex-direction: column;
-		flex: 0 0 100%;
+		
 
         height: auto;
     }
