@@ -3040,14 +3040,14 @@ nav a:hover{
 
 .books-hero {
 
-    background: url('../images/bookshero.jpeg');
+    background: url('../images/bookshero1.png');
     background-size: cover;
 
     background-position: center 30%;
 
     background-repeat: no-repeat;
 
-    min-height:55vh;
+    min-height:85vh;
 
     display: flex;
     align-items: center;
@@ -3099,35 +3099,16 @@ nav a:hover{
 /* IMAGE WRAPPER */
 
 .book-image-wrapper{
-
-    background:#f8f4ec;
-
-    padding:16px 16px 0 16px;
-
+    padding:20px;
     display:flex;
-
-    align-items:center;
-
     justify-content:center;
-
-    min-height:320px;
+    align-items:center;
 }
 
-/* BOOK IMAGE */
-
 .book-image{
-
-    width:100%;
-
-    max-width:220px;
-
-    aspect-ratio:3/4;
-
-    object-fit:contain;
-
+    height:280px;
+    width:auto;
     display:block;
-
-    transition:.4s ease;
 }
 
 /* CONTENT */
