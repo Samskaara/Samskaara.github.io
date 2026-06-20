@@ -3047,7 +3047,7 @@ nav a:hover{
 
     background-repeat: no-repeat;
 
-    min-height: 100vh;
+    min-height:55vh;
 
     display: flex;
     align-items: center;
@@ -3403,9 +3403,9 @@ nav a:hover{
 
     .books-hero {
 
-        min-height: 80vh; /* better than full screen on mobile */
+        min-height: 35vh; /* better than full screen on mobile */
 
-        background-position: center top; /* shows important top content */
+        background-position:center center; /* shows important top content */
 
     }
 
