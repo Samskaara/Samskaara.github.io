@@ -3382,12 +3382,10 @@ nav a:hover{
 
 @media (max-width: 768px) {
 
-    .books-hero {
-
-        min-height: 35vh; /* better than full screen on mobile */
-
-        background-position:center center; /* shows important top content */
-
+    .books-hero{
+        min-height:50vh;
+        background-position:center center;
+        background-size:cover;
     }
 
     .books-hero .hero-wrapper {
