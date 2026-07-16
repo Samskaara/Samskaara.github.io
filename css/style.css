@@ -3553,3 +3553,431 @@ nav a:hover{
         padding:10px 50px;
     }
 }
+
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    min-width:220px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    border-radius:8px;
+    z-index:999;
+}
+
+/* ===========================
+   FEATURED SCHOOL
+=========================== */
+
+.featured-school{
+
+    max-width:1200px;
+    margin:60px auto;
+    background:#fff;
+    border-radius:28px;
+    padding:45px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.featured-school-header{
+
+    display:flex;
+    align-items:center;
+    gap:35px;
+
+}
+
+.school-logo-large{
+
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:20px;
+    padding:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.featured-school h2{
+
+    font-size:34px;
+    margin-bottom:10px;
+
+}
+
+.school-location{
+
+    display:inline-block;
+    color:#8B5E3C;
+    font-weight:600;
+    margin-bottom:18px;
+
+}
+
+.featured-school p{
+
+    font-size:17px;
+    line-height:1.8;
+    color:#555;
+
+}
+
+
+/* ===========================
+   IMPACT HIGHLIGHTS
+=========================== */
+
+.school-highlights{
+
+    max-width:1200px;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+
+}
+
+.highlight-card{
+
+    background:#fff;
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.highlight-card h3{
+
+    font-size:34px;
+    color:#C97C2D;
+    margin-bottom:10px;
+
+}
+
+.highlight-card p{
+
+    color:#555;
+    font-size:16px;
+
+}
+
+
+/* ===========================
+   PHOTO GALLERY
+=========================== */
+/* ===========================
+   HORIZONTAL PHOTO GALLERY
+=========================== */
+
+.school-gallery-section{
+
+    max-width:1300px;
+    margin:70px auto;
+    padding:0 20px;
+
+}
+
+.school-gallery-section h2{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.gallery-wrapper{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+}
+
+.school-gallery{
+
+    display:flex;
+    gap:20px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    flex:1;
+
+}
+
+.school-gallery::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+.school-gallery img{
+
+    flex:0 0 300px;
+    max-height:230px;
+    width:auto;
+    object-fit:contain;
+    background:#fff;
+    padding:6px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.school-gallery img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.gallery-arrow{
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#C97C2D;
+
+    color:#fff;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    flex-shrink:0;
+
+}
+
+.gallery-arrow:hover{
+
+    background:#9c5e20;
+
+}
+/* ===========================
+   VIDEO GALLERY
+=========================== */
+
+.school-video-section{
+
+    max-width:1200px;
+    margin:80px auto;
+
+}
+
+.school-video-section h2{
+
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.video-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+
+}
+
+.video-card{
+
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.video-card video{
+
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:contain;
+    background:#000;
+    display:block;
+
+}
+
+
+/* ===========================
+   TESTIMONIAL
+=========================== */
+
+.school-testimonial{
+
+    max-width:1000px;
+    margin:90px auto;
+
+}
+
+.testimonial-box{
+
+    background:linear-gradient(135deg,#FFF8EF,#FFF2DE);
+    padding:45px;
+    border-radius:24px;
+    text-align:center;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.testimonial-box i{
+
+    font-size:40px;
+    color:#D99A3B;
+    margin-bottom:20px;
+
+}
+
+.testimonial-box p{
+
+    font-size:19px;
+    line-height:1.9;
+    color:#555;
+    font-style:italic;
+
+}
+
+.testimonial-box h4{
+
+    margin-top:25px;
+    color:#8B5E3C;
+
+}
+
+
+/* ===========================
+   CTA
+=========================== */
+
+.school-cta{
+
+    max-width:1000px;
+    margin:80px auto;
+    text-align:center;
+    padding:50px 30px;
+
+}
+
+.school-cta h2{
+
+    margin-bottom:25px;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.featured-school{
+
+    padding:30px;
+
+}
+
+.featured-school-header{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.school-highlights{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.school-highlights{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.featured-school h2{
+
+    font-size:28px;
+
+}
+
+.school-logo-large{
+
+    width:120px;
+    height:120px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+    .gallery-arrow{
+
+        display:none;
+
+    }
+
+    .school-gallery img{
+
+        flex:0 0 260px;
+
+        height:180px;
+
+    }
+
+}
+
+/* Secondary CTA Button */
+
+.hero-btn.secondary{
+
+    background:#8B5E3C;
+    color:#fff;
+    border:2px solid #8B5E3C;
+
+}
+
+.hero-btn.secondary:hover{
+
+    background:#6F472D;
+    border-color:#6F472D;
+    color:#fff;
+    transform:translateY(-3px);
+
+}
