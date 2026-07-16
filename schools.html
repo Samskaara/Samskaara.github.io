@@ -434,6 +434,188 @@
 </section>
 
 
+<!-- new Schools section -->
+
+<section class="featured-school">
+
+    <div class="featured-school-header">
+
+        <img src="images/bachpan-logo.png"
+             class="school-logo-large">
+
+        <div>
+
+            <h2>Bachpan Preschool</h2>
+
+            <span class="school-location">
+                Ramamurthy Nagar, Bengaluru
+            </span>
+
+            <p>
+
+                Bachpan Preschool partners with
+                Samskaara Vriksham to bring
+                Indian values, shlokas,
+                yoga, mindfulness,
+                festivals and joyful learning
+                into children's everyday lives.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="school-highlights">
+
+    <div class="highlight-card">
+
+        <h3>40+</h3>
+
+        <p>Children Benefited</p>
+
+    </div>
+
+    <div class="highlight-card">
+
+        <h3>Weekly</h3>
+
+        <p>Interactive Sessions</p>
+
+    </div>
+
+    <div class="highlight-card">
+
+        <h3>Values</h3>
+
+        <p>Shlokas • Stories • Yoga</p>
+
+    </div>
+
+    <div class="highlight-card">
+
+        <h3>Parents</h3>
+
+        <p>Positive Feedback</p>
+
+    </div>
+
+</section>
+
+<section class="school-gallery-section">
+
+    <h2>Moments From Bachpan Preschool</h2>
+
+    <div class="gallery-wrapper">
+
+        <button class="gallery-arrow left" onclick="scrollGallery(-1)">
+            &#10094;
+        </button>
+
+        <div class="school-gallery" id="schoolGallery">
+
+            <img src="images/schools/bachpan/school1.jpeg" alt="">
+            <img src="images/schools/bachpan/school2.jpeg" alt="">
+            <img src="images/schools/bachpan/school3.jpeg" alt="">
+            <img src="images/schools/bachpan/school4.jpeg" alt="">
+            <img src="images/schools/bachpan/school5.jpeg" alt="">
+            <img src="images/schools/bachpan/school6.jpeg" alt="">
+            <img src="images/schools/bachpan/school7.jpeg" alt="">
+            <img src="images/schools/bachpan/school8.jpeg" alt="">
+			<img src="images/schools/bachpan/school9.jpeg" alt="">
+			<img src="images/schools/bachpan/school10.jpeg" alt="">
+
+        </div>
+
+        <button class="gallery-arrow right" onclick="scrollGallery(1)">
+            &#10095;
+        </button>
+
+    </div>
+
+</section>
+
+
+<section class="school-video-section">
+
+		<h2>Watch Our Sessions</h2>
+
+	<div class="video-grid">
+
+		<div class="video-card">
+			<video controls>
+				<source src="videos/bachpan/schoolv1.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="video-card">
+			<video controls>
+				<source src="videos/bachpan/schoolv2.mp4" type="video/mp4">
+			</video>
+		</div>
+
+	</div>
+</section>
+
+<section class="school-testimonial">
+
+		<div class="testimonial-box">
+
+		<i class="fas fa-quote-left"></i>
+
+		<p>
+
+		Samskaara Vriksham has beautifully introduced
+		our children to Indian culture through
+		engaging stories, shlokas and activities.
+		The sessions are joyful, meaningful and
+		loved by both children and parents.
+
+		</p>
+
+		<h4>
+		— Bachpan Preschool
+		</h4>
+
+		</div>
+
+</section>
+
+<section class="school-cta">
+
+    <h2>
+        Want your school to be featured here?
+    </h2>
+
+    <p>
+        Let's work together to bring values, culture, confidence, and joyful learning to your students.
+    </p>
+
+    <div class="cta-actions">
+
+        <a href="https://forms.gle/YSnf1QHaDhW3R4SS8"
+           target="_blank"
+           class="hero-btn primary">
+
+            Partner With Us
+
+        </a>
+
+        <a href="https://wa.me/919731256611"
+           target="_blank"
+           class="hero-btn secondary">
+
+            Talk To Us
+
+        </a>
+
+    </div>
+
+</section>
+
 <!-- SCHOOLS >
 
 <section class="premium-section light-bg">
@@ -613,6 +795,26 @@
     </p>
 
 </footer>
+
+
+<script>
+
+function scrollGallery(direction){
+
+    const gallery=document.getElementById("schoolGallery");
+
+    gallery.scrollBy({
+
+        left:direction*350,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+</script>
+
 
 </body>
 </html>
