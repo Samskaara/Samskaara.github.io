@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Samskaara Vriksham</title>
+    <title>Samskaara Vriksham | Value-Based Education, Parenting & Garbha Samskaara</title>
+	
+	<meta name="description"
+      content="Samskaara Vriksham nurtures children through value-based education, Indian culture, Bhagavad Gita wisdom, parenting guidance and Garbha Samskaara programs to help families raise confident, compassionate and culturally rooted children.">
+	
+	<link rel="canonical"
+      href="https://www.samskaaravriksham.com/">
+	
+	<meta name="robots"
+      content="index, follow">
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
@@ -13,7 +22,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 	
-	
+	<meta name="theme-color"
+      content="#1B5E20">
 
 		<link rel="icon" href="/favicon.ico" sizes="any">
 
@@ -57,7 +67,7 @@
 
             <img src="images/SamskaaraLogo.png"
                  class="logo"
-                 alt="Logo">
+                 alt="Samskaara Vriksham Logo">
 
             <div class="brand-text">
 
@@ -71,17 +81,13 @@
             </div>
 
         </div>
-		
-	<button class="menu-toggle"
-            onclick="toggleMenu()">
-        &#9776;
-    </button>
 
-        <!-- Stciky header -->
+        <!-- RIGHT -->
 
-        <nav id="mainNav">
+        <nav>
             <a href="#home">Home</a>
             <a href="#founder's story">Our Story</a>
+            <!--<a href="#programs">Programs</a>-->
 			<div class="dropdown">
 				<a href="#programs">Programs ▾</a>
 				<div class="dropdown-content">
@@ -100,44 +106,6 @@
             <a href="#blogs">Blogs</a>
             <a href="#contact">Contact</a>
         </nav>
-		
-		<!--Hamburger-->
-		<!--<nav id="mainNav">
-
-			<a href="#home">Home</a>
-			<a href="#founder-story">Our Story</a>
-			<div class="dropdown">
-
-				<a href="#programs">Programs ▾</a>
-
-				<div class="dropdown-content">
-
-					<a href="#samskaara-programs">
-						Samskaara
-					</a>
-
-					<a href="#garbha-programs">
-						Garbha Samskaara
-					</a>
-
-			</div>
-
-</div>
-
-			<a href="books.html">
-				Books
-			</a>
-
-			<a href="schools.html">
-				Samskaara at Schools
-			</a>
-
-			<a href="#gallery">Our Team</a>
-			<a href="#testimonials">Testimonials</a>
-			<a href="#blogs">Blogs</a>
-			<a href="#contact">Contact</a>
-
-		</nav>-->
 
     </div>
 
@@ -423,7 +391,7 @@
      FOUNDER STORY SECTION
 ========================= -->
 
-<section class="founder-story-section" id="founder-story">
+<section class="founder-story-section" id="founder's story">
 
     <div class="founder-wrapper">
 
@@ -2951,36 +2919,6 @@ const observer = new IntersectionObserver((entries) => {
 
 counters.forEach(counter => {
     observer.observe(counter);
-});
-
-</script>
-
-
-
-<script>
-
-function toggleMenu(){
-
-    document
-        .getElementById("mainNav")
-        .classList
-        .toggle("active");
-
-}
-
-document
-.querySelectorAll("#mainNav a")
-.forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        document
-        .getElementById("mainNav")
-        .classList
-        .remove("active");
-
-    });
-
 });
 
 </script>
